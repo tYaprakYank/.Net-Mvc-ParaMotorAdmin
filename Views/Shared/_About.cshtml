@@ -1,0 +1,31 @@
+@model occupy.Models.IndexViewModel
+@{
+	var item=Model.About!;
+}
+<!--================Mission Area =================-->
+	<section class="mission_area">
+		@if (item!= null)
+		{
+				<div class="row m0">
+			
+					<div class="col-lg-6 p0">
+				<div class="left_img"><img src="~/uploads/files/icon/@item.Image" alt=""></div>
+			</div>
+			<div class="col-lg-6 p0">
+					<div class="item">
+						<div class="mission_text">
+							<h4>@item.Title</h4>
+							<p>@item.Subtitle</p>
+
+						<p><a class="banner_btn" href="/about-us">Detaylı Bilgi</a></p>	
+						</div>
+						
+					</div>
+			</div>
+			
+		
+		</div>
+		}
+	
+	</section>
+	<!--================End Mission Area =================-->

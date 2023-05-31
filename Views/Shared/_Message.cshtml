@@ -1,0 +1,15 @@
+@model occupy.Models.IndexViewModel
+	<!--================Project Details Area =================-->
+	<section class="project_know_area p_120">
+		<div class="container">
+			<div class="project_know_inner text-center">
+				@foreach (var item in Model.Messages!)
+				{
+					<h3>@item.Title</h3>
+				<p>@item.Subtitle</p>
+				<a class="white_btn" href="@item.Url" target="@item.UrlTarget">@item.UrlText</a>
+				}
+			</div>
+		</div>
+	</section>
+	<!--================End Project Details Area =================-->
